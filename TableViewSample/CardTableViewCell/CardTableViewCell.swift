@@ -19,19 +19,8 @@ class CardTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        applyShadow()
-    }
-    
-    func applyShadow() {
-        //Deixando o shadow passar das fronteiras da mascara da layer da contentView da celula
-        self.contentView.layer.masksToBounds = false
-        
-        //Criando e aplicando a shadow
-        bgView.layer.cornerRadius = 20.0
-        bgView.layer.shadowColor = UIColor.gray.cgColor
-        bgView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        bgView.layer.shadowRadius = 2.0
-        bgView.layer.shadowOpacity = 0.3
+        self.contentView.layer.masksToBounds = false    
+        bgView.applyShadow()
     }
     
 }

@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         let cellNib = UINib(nibName: CardTableViewCell.nibName, bundle: .main)
         //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
         tableView.register(cellNib, forCellReuseIdentifier: CardTableViewCell.identifier)
+        
+        //Instancia nib da celula customizada a partir da sua xib que está na main bundle
+        let largeNib = UINib(nibName: "LargeTableViewCell", bundle: .main)
+        //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
+        tableView.register(largeNib, forCellReuseIdentifier: "largeCell")
     }
 
 }
@@ -43,14 +48,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier) as! CardTableViewCell
+        if indexPath.row == items.count-1 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "largeCell") as! LargeTableViewCell
+            return cell
+            
+        } else {
         
-        let currentItem = items[indexPath.row]
-        
-        cell.label.text = currentItem.text
-        cell.sideImageView.tintColor = currentItem.color
-        
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier) as! CardTableViewCell
+            
+            let currentItem = items[indexPath.row]
+            
+            cell.label.text = currentItem.text
+            cell.sideImageView.tintColor = currentItem.color
+            
+            return cell
+            
+        }
     }
 
 }

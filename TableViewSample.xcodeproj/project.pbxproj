@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E747E24634A6000819FA2 /* LargeTableViewCell.swift */; };
+		063E748124634A6000819FA2 /* LargeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063E747F24634A6000819FA2 /* LargeTableViewCell.xib */; };
+		06C56FCB24770EEC00B81DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93E2460439D0084DEF4 /* ViewController.swift */; };
+		06C56FCC24770EEC00B81DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93A2460439D0084DEF4 /* AppDelegate.swift */; };
+		06C56FCD24770EEC00B81DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */; };
+		06C56FCE24770EEC00B81DA6 /* LargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E747E24634A6000819FA2 /* LargeTableViewCell.swift */; };
+		06C56FCF24770EEC00B81DA6 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF96A24604D160084DEF4 /* CardTableViewCell.swift */; };
+		06C56FD224770EEC00B81DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF9452460439F0084DEF4 /* LaunchScreen.storyboard */; };
+		06C56FD324770EEC00B81DA6 /* LargeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063E747F24634A6000819FA2 /* LargeTableViewCell.xib */; };
+		06C56FD424770EEC00B81DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF9432460439F0084DEF4 /* Assets.xcassets */; };
+		06C56FD524770EEC00B81DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF9402460439D0084DEF4 /* Main.storyboard */; };
+		06C56FD624770EEC00B81DA6 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */; };
 		06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93A2460439D0084DEF4 /* AppDelegate.swift */; };
 		06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */; };
 		06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93E2460439D0084DEF4 /* ViewController.swift */; };
@@ -37,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063E747E24634A6000819FA2 /* LargeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTableViewCell.swift; sourceTree = "<group>"; };
+		063E747F24634A6000819FA2 /* LargeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTableViewCell.xib; sourceTree = "<group>"; };
+		06C56FDA24770EEC00B81DA6 /* TableViewSample copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewSample copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C56FDB24770EED00B81DA6 /* TableViewSample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TableViewSample copy-Info.plist"; path = "/Users/gabi/Code/Swift/TableViewSample/TableViewSample copy-Info.plist"; sourceTree = "<absolute>"; };
 		06EAF9372460439D0084DEF4 /* TableViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EAF93A2460439D0084DEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06C56FD024770EEC00B81DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06EAF9342460439D0084DEF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063E748224634A6500819FA2 /* Large */ = {
+			isa = PBXGroup;
+			children = (
+				063E747E24634A6000819FA2 /* LargeTableViewCell.swift */,
+				063E747F24634A6000819FA2 /* LargeTableViewCell.xib */,
+			);
+			path = Large;
+			sourceTree = "<group>";
+		};
 		06EAF92E2460439C0084DEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +119,7 @@
 				06EAF9502460439F0084DEF4 /* TableViewSampleTests */,
 				06EAF95B2460439F0084DEF4 /* TableViewSampleUITests */,
 				06EAF9382460439D0084DEF4 /* Products */,
+				06C56FDB24770EED00B81DA6 /* TableViewSample copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +129,7 @@
 				06EAF9372460439D0084DEF4 /* TableViewSample.app */,
 				06EAF94D2460439F0084DEF4 /* TableViewSampleTests.xctest */,
 				06EAF9582460439F0084DEF4 /* TableViewSampleUITests.xctest */,
+				06C56FDA24770EEC00B81DA6 /* TableViewSample copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +139,7 @@
 			children = (
 				06EAF93A2460439D0084DEF4 /* AppDelegate.swift */,
 				06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */,
+				063E748224634A6500819FA2 /* Large */,
 				06EAF96E24604D1A0084DEF4 /* CardTableViewCell */,
 				06EAF93E2460439D0084DEF4 /* ViewController.swift */,
 				06EAF9402460439D0084DEF4 /* Main.storyboard */,
@@ -145,6 +180,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		06C56FC924770EEC00B81DA6 /* TableViewSample copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C56FD724770EEC00B81DA6 /* Build configuration list for PBXNativeTarget "TableViewSample copy" */;
+			buildPhases = (
+				06C56FCA24770EEC00B81DA6 /* Sources */,
+				06C56FD024770EEC00B81DA6 /* Frameworks */,
+				06C56FD124770EEC00B81DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TableViewSample copy";
+			productName = TableViewSample;
+			productReference = 06C56FDA24770EEC00B81DA6 /* TableViewSample copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		06EAF9362460439D0084DEF4 /* TableViewSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06EAF9612460439F0084DEF4 /* Build configuration list for PBXNativeTarget "TableViewSample" */;
@@ -235,6 +287,7 @@
 			projectRoot = "";
 			targets = (
 				06EAF9362460439D0084DEF4 /* TableViewSample */,
+				06C56FC924770EEC00B81DA6 /* TableViewSample copy */,
 				06EAF94C2460439F0084DEF4 /* TableViewSampleTests */,
 				06EAF9572460439F0084DEF4 /* TableViewSampleUITests */,
 			);
@@ -242,11 +295,24 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		06C56FD124770EEC00B81DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C56FD224770EEC00B81DA6 /* LaunchScreen.storyboard in Resources */,
+				06C56FD324770EEC00B81DA6 /* LargeTableViewCell.xib in Resources */,
+				06C56FD424770EEC00B81DA6 /* Assets.xcassets in Resources */,
+				06C56FD524770EEC00B81DA6 /* Main.storyboard in Resources */,
+				06C56FD624770EEC00B81DA6 /* CardTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06EAF9352460439D0084DEF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06EAF9472460439F0084DEF4 /* LaunchScreen.storyboard in Resources */,
+				063E748124634A6000819FA2 /* LargeTableViewCell.xib in Resources */,
 				06EAF9442460439F0084DEF4 /* Assets.xcassets in Resources */,
 				06EAF9422460439D0084DEF4 /* Main.storyboard in Resources */,
 				06EAF96D24604D160084DEF4 /* CardTableViewCell.xib in Resources */,
@@ -270,6 +336,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		06C56FCA24770EEC00B81DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C56FCB24770EEC00B81DA6 /* ViewController.swift in Sources */,
+				06C56FCC24770EEC00B81DA6 /* AppDelegate.swift in Sources */,
+				06C56FCD24770EEC00B81DA6 /* SceneDelegate.swift in Sources */,
+				06C56FCE24770EEC00B81DA6 /* LargeTableViewCell.swift in Sources */,
+				06C56FCF24770EEC00B81DA6 /* CardTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06EAF9332460439D0084DEF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +355,7 @@
 				06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */,
 				06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */,
 				06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */,
+				063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */,
 				06EAF96C24604D160084DEF4 /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +411,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		06C56FD824770EEC00B81DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = "TableViewSample copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.TableViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06C56FD924770EEC00B81DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 526YR6WHWC;
+				INFOPLIST_FILE = "TableViewSample copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharkberry.TableViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		06EAF95F2460439F0084DEF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,6 +684,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06C56FD724770EEC00B81DA6 /* Build configuration list for PBXNativeTarget "TableViewSample copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C56FD824770EEC00B81DA6 /* Debug */,
+				06C56FD924770EEC00B81DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		06EAF9322460439C0084DEF4 /* Build configuration list for PBXProject "TableViewSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
