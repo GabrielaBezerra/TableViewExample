@@ -29,6 +29,7 @@
 		06EAF95D2460439F0084DEF4 /* TableViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF95C2460439F0084DEF4 /* TableViewSampleUITests.swift */; };
 		06EAF96C24604D160084DEF4 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF96A24604D160084DEF4 /* CardTableViewCell.swift */; };
 		06EAF96D24604D160084DEF4 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */; };
+		06ED3F1D2492CC6400A59CD0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		06EAF95E2460439F0084DEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06EAF96A24604D160084DEF4 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				06EAF9432460439F0084DEF4 /* Assets.xcassets */,
 				06EAF9452460439F0084DEF4 /* LaunchScreen.storyboard */,
 				06EAF9482460439F0084DEF4 /* Info.plist */,
+				06ED3F1E2492CC6900A59CD0 /* Managers */,
 			);
 			path = TableViewSample;
 			sourceTree = "<group>";
@@ -175,6 +178,14 @@
 				06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */,
 			);
 			path = CardTableViewCell;
+			sourceTree = "<group>";
+		};
+		06ED3F1E2492CC6900A59CD0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06ED3F1D2492CC6400A59CD0 /* NetworkManager.swift in Sources */,
 				06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */,
 				06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */,
 				06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */,
