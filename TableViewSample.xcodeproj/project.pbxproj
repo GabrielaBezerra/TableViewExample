@@ -19,6 +19,11 @@
 		06C56FD424770EEC00B81DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF9432460439F0084DEF4 /* Assets.xcassets */; };
 		06C56FD524770EEC00B81DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF9402460439D0084DEF4 /* Main.storyboard */; };
 		06C56FD624770EEC00B81DA6 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */; };
+		06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */; };
+		06E45953249BE4EC00920A6D /* TampinhaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E45951249BE4EC00920A6D /* TampinhaTableViewCell.xib */; };
+		06E45955249BE76D00920A6D /* TampinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */; };
+		06E45958249BE82600920A6D /* TampinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45956249BE82600920A6D /* TampinhaCollectionViewCell.swift */; };
+		06E45959249BE82600920A6D /* TampinhaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E45957249BE82600920A6D /* TampinhaCollectionViewCell.xib */; };
 		06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93A2460439D0084DEF4 /* AppDelegate.swift */; };
 		06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */; };
 		06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF93E2460439D0084DEF4 /* ViewController.swift */; };
@@ -29,6 +34,7 @@
 		06EAF95D2460439F0084DEF4 /* TableViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF95C2460439F0084DEF4 /* TableViewSampleUITests.swift */; };
 		06EAF96C24604D160084DEF4 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EAF96A24604D160084DEF4 /* CardTableViewCell.swift */; };
 		06EAF96D24604D160084DEF4 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */; };
+		06ED3F182492CC0D00A59CD0 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED3F172492CC0D00A59CD0 /* StorageManager.swift */; };
 		06ED3F1D2492CC6400A59CD0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,10 @@
 		063E747F24634A6000819FA2 /* LargeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTableViewCell.xib; sourceTree = "<group>"; };
 		06C56FDA24770EEC00B81DA6 /* TableViewSample copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewSample copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C56FDB24770EED00B81DA6 /* TableViewSample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TableViewSample copy-Info.plist"; path = "/Users/gabi/Code/Swift/TableViewSample/TableViewSample copy-Info.plist"; sourceTree = "<absolute>"; };
+		06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampinhaTableViewCell.swift; sourceTree = "<group>"; };
+		06E45951249BE4EC00920A6D /* TampinhaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TampinhaTableViewCell.xib; sourceTree = "<group>"; };
+		06E45956249BE82600920A6D /* TampinhaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampinhaCollectionViewCell.swift; sourceTree = "<group>"; };
+		06E45957249BE82600920A6D /* TampinhaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TampinhaCollectionViewCell.xib; sourceTree = "<group>"; };
 		06EAF9372460439D0084DEF4 /* TableViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EAF93A2460439D0084DEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 		06EAF95E2460439F0084DEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06EAF96A24604D160084DEF4 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		06EAF96B24604D160084DEF4 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		06ED3F172492CC0D00A59CD0 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +125,25 @@
 			path = Large;
 			sourceTree = "<group>";
 		};
+		06E45954249BE4F000920A6D /* Tampinha */ = {
+			isa = PBXGroup;
+			children = (
+				06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */,
+				06E45951249BE4EC00920A6D /* TampinhaTableViewCell.xib */,
+				06E4595A249BE82900920A6D /* TampinhaCollectionViewCell */,
+			);
+			path = Tampinha;
+			sourceTree = "<group>";
+		};
+		06E4595A249BE82900920A6D /* TampinhaCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				06E45956249BE82600920A6D /* TampinhaCollectionViewCell.swift */,
+				06E45957249BE82600920A6D /* TampinhaCollectionViewCell.xib */,
+			);
+			path = TampinhaCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		06EAF92E2460439C0084DEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,7 @@
 			children = (
 				06EAF93A2460439D0084DEF4 /* AppDelegate.swift */,
 				06EAF93C2460439D0084DEF4 /* SceneDelegate.swift */,
+				06E45954249BE4F000920A6D /* Tampinha */,
 				063E748224634A6500819FA2 /* Large */,
 				06EAF96E24604D1A0084DEF4 /* CardTableViewCell */,
 				06EAF93E2460439D0084DEF4 /* ViewController.swift */,
@@ -184,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				06ED3F1C2492CC6400A59CD0 /* NetworkManager.swift */,
+				06ED3F172492CC0D00A59CD0 /* StorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -326,7 +358,9 @@
 				063E748124634A6000819FA2 /* LargeTableViewCell.xib in Resources */,
 				06EAF9442460439F0084DEF4 /* Assets.xcassets in Resources */,
 				06EAF9422460439D0084DEF4 /* Main.storyboard in Resources */,
+				06E45959249BE82600920A6D /* TampinhaCollectionViewCell.xib in Resources */,
 				06EAF96D24604D160084DEF4 /* CardTableViewCell.xib in Resources */,
+				06E45953249BE4EC00920A6D /* TampinhaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C56FCB24770EEC00B81DA6 /* ViewController.swift in Sources */,
+				06E45955249BE76D00920A6D /* TampinhaTableViewCell.swift in Sources */,
 				06C56FCC24770EEC00B81DA6 /* AppDelegate.swift in Sources */,
 				06C56FCD24770EEC00B81DA6 /* SceneDelegate.swift in Sources */,
 				06C56FCE24770EEC00B81DA6 /* LargeTableViewCell.swift in Sources */,
@@ -364,9 +399,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06ED3F1D2492CC6400A59CD0 /* NetworkManager.swift in Sources */,
+				06E45958249BE82600920A6D /* TampinhaCollectionViewCell.swift in Sources */,
 				06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */,
 				06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */,
+				06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */,
 				06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */,
+				06ED3F182492CC0D00A59CD0 /* StorageManager.swift in Sources */,
 				063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */,
 				06EAF96C24604D160084DEF4 /* CardTableViewCell.swift in Sources */,
 			);
