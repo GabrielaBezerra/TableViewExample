@@ -8,17 +8,11 @@
 
 import UIKit
 
-enum CellTypes {
-    case fire(text: String, color: UIColor)
-    case largeAnt
-    case tampinhas
-}
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let items: [CellTypes] = [
+    let items: [CellType] = [
         .fire(text: "Red", color: .red),
         .fire(text: "Green", color: .green),
         .largeAnt,
@@ -49,28 +43,8 @@ class ViewController: UIViewController {
         //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
         tableView.register(tampinhaNib, forCellReuseIdentifier: "tampinhaCell")
         
-        //Chama função que faz setup do comportamento da NavigationBar quando a tableView é scrollada
-        setupNavigationBar(hidesOnScroll: true)
-    }
-    
-    func setupNavigationBar(hidesOnScroll: Bool) {
-        
-        if hidesOnScroll {
-            //Configurando a navigation de forma que o texto suma quando a tableView for scrollada pra cima e a navigation colapsar
-            self.navigationController?.navigationBar.isOpaque = false
-            self.navigationController?.navigationBar.backgroundColor = .clear
-            self.navigationController?.navigationBar.barTintColor = .clear
-            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.clear]
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-        } else {
-            //Impedir a LargeTitle de collapsar
-            self.navigationController?.navigationBar.isOpaque = true
-            self.navigationController?.navigationBar.backgroundColor = self.view.backgroundColor
-            self.navigationController?.navigationBar.barTintColor = self.view.backgroundColor
-            view.insertSubview(UIView(), at: 0)
-        }
-        
+        //Chama função da extensão de UINavigationController que muda comportamento da NavigationBar quando a tableView é scrollada
+        navigationController?.setupScrollBehavior(.hidesOnScroll)
     }
     
 }
