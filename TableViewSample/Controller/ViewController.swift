@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let items: [CellType] = [
+        .dynamicViewCode(
+            heading: "Leaf\n(plural leaves)",
+            body: "Leaves can have many different shapes, sizes, and textures.",
+            image: UIImage(named: "leaf")
+        ),
+        .dynamicViewCode(
+            heading: "Lady Bug",
+            body: "Coccinellidae (/ˌkɒksɪˈnɛlɪˌdiː/) is a widespread family of small beetles ranging in size from 0.8 to 18 mm (0.03 to 0.71 in). The family is commonly known as ladybugs in North America and ladybirds in Great Britain and other parts of the English-speaking world. Entomologists prefer the names ladybird beetles or lady beetles as these insects are not classified as true bugs.",
+            image: UIImage(systemName: "ladybug", withConfiguration: UIImage.SymbolConfiguration(pointSize: 52))
+        ),
         .fire(text: "Red", color: .red),
         .fire(text: "Green", color: .green),
         .largeAnt,
@@ -60,6 +70,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let currentItem = items[indexPath.row]
         
         switch currentItem {
+
+        case .dynamicViewCode(let heading, let body, let image):
+            let cell = DynamicViewCodeCell(heading: heading, body: body, image: image)
+            return cell
+
         case .fire(let text, let color):
             let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier) as! CardTableViewCell
             cell.label.text = text

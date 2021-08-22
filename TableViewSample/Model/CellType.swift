@@ -13,4 +13,5 @@ enum CellType {
     case fire(text: String, color: UIColor)
     case largeAnt
     case tampinhas
+    case dynamicViewCode(heading: String, body: String, image: UIImage?)
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062071F326D2992000A45EC5 /* DynamicViewCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062071F226D2992000A45EC5 /* DynamicViewCodeCell.swift */; };
 		063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E747E24634A6000819FA2 /* LargeTableViewCell.swift */; };
 		063E748124634A6000819FA2 /* LargeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063E747F24634A6000819FA2 /* LargeTableViewCell.xib */; };
 		06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062071F226D2992000A45EC5 /* DynamicViewCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewCodeCell.swift; sourceTree = "<group>"; };
 		063E747E24634A6000819FA2 /* LargeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTableViewCell.swift; sourceTree = "<group>"; };
 		063E747F24634A6000819FA2 /* LargeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTableViewCell.xib; sourceTree = "<group>"; };
 		06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampinhaTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062071F126D298E900A45EC5 /* DynamicViewCodeCell */ = {
+			isa = PBXGroup;
+			children = (
+				062071F226D2992000A45EC5 /* DynamicViewCodeCell.swift */,
+			);
+			path = DynamicViewCodeCell;
+			sourceTree = "<group>";
+		};
 		063E748224634A6500819FA2 /* Large */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		06E45961249D06F200920A6D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				062071F126D298E900A45EC5 /* DynamicViewCodeCell */,
 				06E45954249BE4F000920A6D /* Tampinha */,
 				063E748224634A6500819FA2 /* Large */,
 				06EAF96E24604D1A0084DEF4 /* Card */,
@@ -360,6 +371,7 @@
 				06E45958249BE82600920A6D /* TampinhaCollectionViewCell.swift in Sources */,
 				06EAF93F2460439D0084DEF4 /* ViewController.swift in Sources */,
 				06EAF93B2460439D0084DEF4 /* AppDelegate.swift in Sources */,
+				062071F326D2992000A45EC5 /* DynamicViewCodeCell.swift in Sources */,
 				06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */,
 				06E45963249D072300920A6D /* CellType.swift in Sources */,
 				06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */,
