@@ -10,6 +10,8 @@
 		062071F326D2992000A45EC5 /* DynamicViewCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062071F226D2992000A45EC5 /* DynamicViewCodeCell.swift */; };
 		063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063E747E24634A6000819FA2 /* LargeTableViewCell.swift */; };
 		063E748124634A6000819FA2 /* LargeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063E747F24634A6000819FA2 /* LargeTableViewCell.xib */; };
+		065AFA1126F934E500EB8FBC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AFA1026F934E500EB8FBC /* TableViewController.swift */; };
+		065AFA1326F9403F00EB8FBC /* DemoSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AFA1226F9403F00EB8FBC /* DemoSetup.swift */; };
 		06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */; };
 		06E45953249BE4EC00920A6D /* TampinhaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E45951249BE4EC00920A6D /* TampinhaTableViewCell.xib */; };
 		06E45958249BE82600920A6D /* TampinhaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E45956249BE82600920A6D /* TampinhaCollectionViewCell.swift */; };
@@ -49,6 +51,8 @@
 		062071F226D2992000A45EC5 /* DynamicViewCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewCodeCell.swift; sourceTree = "<group>"; };
 		063E747E24634A6000819FA2 /* LargeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTableViewCell.swift; sourceTree = "<group>"; };
 		063E747F24634A6000819FA2 /* LargeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTableViewCell.xib; sourceTree = "<group>"; };
+		065AFA1026F934E500EB8FBC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		065AFA1226F9403F00EB8FBC /* DemoSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSetup.swift; sourceTree = "<group>"; };
 		06E45950249BE4EC00920A6D /* TampinhaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampinhaTableViewCell.swift; sourceTree = "<group>"; };
 		06E45951249BE4EC00920A6D /* TampinhaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TampinhaTableViewCell.xib; sourceTree = "<group>"; };
 		06E45956249BE82600920A6D /* TampinhaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TampinhaCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		06E4595F249D06C200920A6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				065AFA1226F9403F00EB8FBC /* DemoSetup.swift */,
 				06E4595D249CCFE200920A6D /* UINavigationController+Extension.swift */,
 			);
 			path = Utils;
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				06EAF93E2460439D0084DEF4 /* ViewController.swift */,
+				065AFA1026F934E500EB8FBC /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,6 +380,8 @@
 				062071F326D2992000A45EC5 /* DynamicViewCodeCell.swift in Sources */,
 				06E45952249BE4EC00920A6D /* TampinhaTableViewCell.swift in Sources */,
 				06E45963249D072300920A6D /* CellType.swift in Sources */,
+				065AFA1326F9403F00EB8FBC /* DemoSetup.swift in Sources */,
+				065AFA1126F934E500EB8FBC /* TableViewController.swift in Sources */,
 				06EAF93D2460439D0084DEF4 /* SceneDelegate.swift in Sources */,
 				063E748024634A6000819FA2 /* LargeTableViewCell.swift in Sources */,
 				06EAF96C24604D160084DEF4 /* CardTableViewCell.swift in Sources */,

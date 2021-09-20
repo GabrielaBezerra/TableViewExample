@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  TableViewSample
 //
-//  Created by Gabriela Bezerra on 04/05/20.
-//  Copyright © 2020 sharkberry. All rights reserved.
+//  Created by Gabriela Bezerra on 20/09/21.
+//  Copyright © 2021 sharkberry. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+class TableViewController: UITableViewController {
+
     let items: [CellType] = [
         .dynamicViewCode(
             heading: "Leaf\n(plural leaves)",
@@ -36,56 +35,56 @@ class ViewController: UIViewController {
         search.searchBar.placeholder = "Type something here to search"
         return search
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+
+        //titulo da navigation
+        self.title = "TableViewController"
+
         //tirando a linha entre as celulas
         tableView.separatorStyle = .none
-        
+
         //Instancia nib da celula customizada a partir da sua xib que está na main bundle
         let cellNib = UINib(nibName: CardTableViewCell.nibName, bundle: .main)
         //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
         tableView.register(cellNib, forCellReuseIdentifier: CardTableViewCell.identifier)
-        
+
         //Instancia nib da celula customizada a partir da sua xib que está na main bundle
         let largeNib = UINib(nibName: "LargeTableViewCell", bundle: .main)
         //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
         tableView.register(largeNib, forCellReuseIdentifier: "largeCell")
-        
+
         //Instancia nib da celula customizada a partir da sua xib que está na main bundle
         let tampinhaNib = UINib(nibName: "TampinhaTableViewCell", bundle: .main)
         //Registra a CardTableViewCell na tableView dessa tela. Agora a cell "pertence" a tableView.
         tableView.register(tampinhaNib, forCellReuseIdentifier: "tampinhaCell")
-        
+
         //Chama função da extensão de UINavigationController que muda comportamento da NavigationBar quando a tableView é scrollada
-        navigationController?.setupScrollBehavior(.largeTitleHidesOnScroll)
+        navigationController?.setupScrollBehavior(.largeTitleFixed(barTintColor: .none))
 
         //Configura UISearchController
         navigationItem.searchController = searchController
     }
-    
+
 }
 
-extension ViewController: UISearchResultsUpdating {
+extension TableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         print("updating search results...")
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension TableViewController {
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let currentItem = items[indexPath.row]
-        
+
         switch currentItem {
 
         case .dynamicViewCode(let heading, let body, let image):
@@ -97,17 +96,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.label.text = text
             cell.sideImageView.tintColor = color
             return cell
-            
+
         case .largeAnt:
             let cell = tableView.dequeueReusableCell(withIdentifier: "largeCell") as! LargeTableViewCell
             return cell
-            
+
         case .tampinhas:
             let cell = tableView.dequeueReusableCell(withIdentifier: "tampinhaCell") as! TampinhaTableViewCell
             return cell
         }
-        
-    }
-    
-}
 
+    }
+
+}

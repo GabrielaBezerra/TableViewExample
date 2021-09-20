@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 enum ScrollBehavior {
-    case fixedLargeTitle(barTintColor: UIColor? = nil)
-    case hidesOnScroll
-    case normal
+    case largeTitleFixed(barTintColor: UIColor? = nil)
+    case largeTitleHidesOnScroll
+    case compactFixed
 }
 
 extension UINavigationController {
@@ -21,7 +21,8 @@ extension UINavigationController {
         
         switch scrollBehavior {
             
-        case .fixedLargeTitle(let barTintColor):
+        case .largeTitleFixed(let barTintColor):
+            self.navigationBar.prefersLargeTitles = true
             //configurando aparencia da navigationBar
             self.navigationBar.scrollEdgeAppearance = {
                 let appearance = UINavigationBarAppearance()
@@ -33,13 +34,15 @@ extension UINavigationController {
             //Impedir a LargeTitle de collapsar
             self.visibleViewController?.view.insertSubview(UIView(), at: 0)
             
-        case .hidesOnScroll:
+        case .largeTitleHidesOnScroll:
+            self.navigationBar.prefersLargeTitles = true
             //Configurando a navigation de forma que o texto suma quando a tableView for scrollada pra cima e a navigation colapsar
             self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.clear]
             self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
             self.navigationBar.shadowImage = UIImage()
-            
-        case .normal:
+
+        case .compactFixed:
+            self.navigationBar.prefersLargeTitles = false
             break
         }
         
